@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ChecklistsViewController : UITableViewController
-//test
+
 
 @end

@@ -21,6 +21,7 @@
 		6C5C102D190C3E3500507E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5C100F190C3E3500507E56 /* UIKit.framework */; };
 		6C5C1035190C3E3500507E56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C1033190C3E3500507E56 /* InfoPlist.strings */; };
 		6C5C1037190C3E3500507E56 /* ChecklistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1036190C3E3500507E56 /* ChecklistsTests.m */; };
+		6C5C1042190D6AF600507E56 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1041190D6AF600507E56 /* ChecklistItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6C5C1032190C3E3500507E56 /* ChecklistsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChecklistsTests-Info.plist"; sourceTree = "<group>"; };
 		6C5C1034190C3E3500507E56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C5C1036190C3E3500507E56 /* ChecklistsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsTests.m; sourceTree = "<group>"; };
+		6C5C1040190D6AF600507E56 /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
+		6C5C1041190D6AF600507E56 /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				6C5C101A190C3E3500507E56 /* ChecklistsAppDelegate.h */,
 				6C5C101B190C3E3500507E56 /* ChecklistsAppDelegate.m */,
 				6C5C101D190C3E3500507E56 /* Main.storyboard */,
+				6C5C1040190D6AF600507E56 /* ChecklistItem.h */,
+				6C5C1041190D6AF600507E56 /* ChecklistItem.m */,
 				6C5C1020190C3E3500507E56 /* ChecklistsViewController.h */,
 				6C5C1021190C3E3500507E56 /* ChecklistsViewController.m */,
 				6C5C1023190C3E3500507E56 /* Images.xcassets */,
@@ -253,6 +258,7 @@
 				6C5C1018190C3E3500507E56 /* main.m in Sources */,
 				6C5C101C190C3E3500507E56 /* ChecklistsAppDelegate.m in Sources */,
 				6C5C1022190C3E3500507E56 /* ChecklistsViewController.m in Sources */,
+				6C5C1042190D6AF600507E56 /* ChecklistItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

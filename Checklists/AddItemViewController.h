@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddItemViewController : UITableViewController
+@interface AddItemViewController : UITableViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneBarButton;
 
 - (IBAction)cancel;
 

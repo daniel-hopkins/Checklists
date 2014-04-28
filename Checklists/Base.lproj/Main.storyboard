@@ -66,11 +66,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efA-5m-lVv">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the item" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efA-5m-lVv">
                                                     <rect key="frame" x="20" y="7" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="hOV-U8-pis" eventType="editingDidEndOnExit" id="jrb-Qb-yYR"/>
+                                                        <outlet property="delegate" destination="hOV-U8-pis" id="fa7-Ya-xhc"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -89,12 +93,16 @@
                                 <action selector="cancel" destination="hOV-U8-pis" id="QQp-dw-pI0"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9vh-XY-ay5">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="9vh-XY-ay5">
                             <connections>
                                 <action selector="done" destination="hOV-U8-pis" id="mo1-zV-6jM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="9vh-XY-ay5" id="zPb-1o-NfY"/>
+                        <outlet property="textField" destination="efA-5m-lVv" id="4wk-Jk-77J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3o-h6-WoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -143,6 +143,32 @@
     [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
+
+- (void)addItemViewControllerDidCancel:(AddItemViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)addItemViewController:(AddItemViewController *)controller didFinishAddingItem:(ChecklistItem *)item
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"AddItem"]) {
+		
+		//1
+		UINavigationController *navigationController = segue.destinationViewController;
+		
+		//2
+		AddItemViewController *controller = (AddItemViewController *)navigationController.topViewController;
+		
+		//3
+		controller.delegate = self;
+	}
+}
+
 @end
 
 

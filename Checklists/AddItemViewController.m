@@ -7,6 +7,7 @@
 //
 
 #import "AddItemViewController.h"
+#import "ChecklistItem.h"
 
 @interface AddItemViewController ()
 
@@ -49,15 +50,17 @@
 
 - (IBAction)cancel
 {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate addItemViewControllerDidCancel:self];
 }
 
 
 - (IBAction)done
 {
-	NSLog(@"Contents of the text field: %@", self.textField.text);
+	ChecklistItem *item = [[ChecklistItem alloc] init];
+	item.text = self.textField.text;
+	item.checked = NO;
 	
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+	[self.delegate addItemViewController:self didFinishAddingItem:item];
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -74,4 +77,15 @@
 	return YES;
 }
 
+
 @end
+
+
+
+
+
+
+
+
+
+

@@ -18,10 +18,37 @@
 	NSMutableArray *_items;
 }
 
+
+- (NSString *)documentsDirectory
+{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths firstObject];
+	return documentsDirectory;
+}
+
+- (NSString *)dataFilePath
+{
+	return [[self documentsDirectory] stringByAppendingPathComponent:@"Checklists.plist"];
+}
+
+- (void)saveChecklistItems
+{
+	NSMutableData *data = [[NSMutableData alloc] init];
+	NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+	
+	[archiver encodeObject:_items forKey:@"ChecklistItems"];
+	[archiver finishEncoding];
+	[data writeToFile:[self dataFilePath] atomically:YES];
+							  
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	NSLog(@"Documents folder is %@", [self documentsDirectory]);
+	NSLog(@"Data file is %@", [self dataFilePath]);
 	
 	_items = [[NSMutableArray alloc] initWithCapacity:20];
 
@@ -120,6 +147,8 @@
 	
 	[self configureCheckmarkForCell:cell withChecklistItem:item];
 	
+	[self saveChecklistItems];
+	
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -129,6 +158,8 @@
 {
     [_items removeObjectAtIndex:indexPath.row];
     
+	[self saveChecklistItems];
+	
     NSArray *indexPaths = @[indexPath];
     [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -150,6 +181,8 @@
 	NSArray *indexPaths = @[indexPath];
 	[self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 	
+	[self saveChecklistItems];
+	
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -161,6 +194,8 @@
 	UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
 	
 	[self configureTextForCell:cell withChecklistItem:item];
+	
+	[self saveChecklistItems];
 	
 	[self dismissViewControllerAnimated:YES completion:nil];
 }

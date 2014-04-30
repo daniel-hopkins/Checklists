@@ -15,7 +15,7 @@
 		6C5C1018190C3E3500507E56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1017190C3E3500507E56 /* main.m */; };
 		6C5C101C190C3E3500507E56 /* ChecklistsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C101B190C3E3500507E56 /* ChecklistsAppDelegate.m */; };
 		6C5C101F190C3E3500507E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C101D190C3E3500507E56 /* Main.storyboard */; };
-		6C5C1022190C3E3500507E56 /* ChecklistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1021190C3E3500507E56 /* ChecklistsViewController.m */; };
+		6C5C1022190C3E3500507E56 /* ChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1021190C3E3500507E56 /* ChecklistViewController.m */; };
 		6C5C1024190C3E3500507E56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C1023190C3E3500507E56 /* Images.xcassets */; };
 		6C5C102B190C3E3500507E56 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5C102A190C3E3500507E56 /* XCTest.framework */; };
 		6C5C102C190C3E3500507E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5C100B190C3E3500507E56 /* Foundation.framework */; };
@@ -49,8 +49,8 @@
 		6C5C101A190C3E3500507E56 /* ChecklistsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistsAppDelegate.h; sourceTree = "<group>"; };
 		6C5C101B190C3E3500507E56 /* ChecklistsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsAppDelegate.m; sourceTree = "<group>"; };
 		6C5C101E190C3E3500507E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C5C1020190C3E3500507E56 /* ChecklistsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistsViewController.h; sourceTree = "<group>"; };
-		6C5C1021190C3E3500507E56 /* ChecklistsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsViewController.m; sourceTree = "<group>"; };
+		6C5C1020190C3E3500507E56 /* ChecklistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistViewController.h; sourceTree = "<group>"; };
+		6C5C1021190C3E3500507E56 /* ChecklistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistViewController.m; sourceTree = "<group>"; };
 		6C5C1023190C3E3500507E56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C5C1029190C3E3500507E56 /* ChecklistsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecklistsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5C102A190C3E3500507E56 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -123,8 +123,8 @@
 				6C5C101D190C3E3500507E56 /* Main.storyboard */,
 				6C5C1040190D6AF600507E56 /* ChecklistItem.h */,
 				6C5C1041190D6AF600507E56 /* ChecklistItem.m */,
-				6C5C1020190C3E3500507E56 /* ChecklistsViewController.h */,
-				6C5C1021190C3E3500507E56 /* ChecklistsViewController.m */,
+				6C5C1020190C3E3500507E56 /* ChecklistViewController.h */,
+				6C5C1021190C3E3500507E56 /* ChecklistViewController.m */,
 				6C5C1023190C3E3500507E56 /* Images.xcassets */,
 				6C5C1012190C3E3500507E56 /* Supporting Files */,
 				035236E2190DC0B00027520D /* ItemDetailViewController.h */,
@@ -262,7 +262,7 @@
 			files = (
 				6C5C1018190C3E3500507E56 /* main.m in Sources */,
 				6C5C101C190C3E3500507E56 /* ChecklistsAppDelegate.m in Sources */,
-				6C5C1022190C3E3500507E56 /* ChecklistsViewController.m in Sources */,
+				6C5C1022190C3E3500507E56 /* ChecklistViewController.m in Sources */,
 				035236E4190DC0B00027520D /* ItemDetailViewController.m in Sources */,
 				6C5C1042190D6AF600507E56 /* ChecklistItem.m in Sources */,
 			);

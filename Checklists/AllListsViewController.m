@@ -158,7 +158,19 @@
 }
 
 
-
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	UINavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"ListNavigationController"];
+	
+	ListDetailViewController *controller = (ListDetailViewController *)navigationController.topViewController;
+	
+	controller.delegate = self;
+	
+	Checklist *checklist = _lists[indexPath.row];
+	controller.checklistToEdit = checklist;
+	
+	[self presentViewController:navigationController animated:YES completion:nil];
+}
 
 /*
 // Override to support conditional editing of the table view.

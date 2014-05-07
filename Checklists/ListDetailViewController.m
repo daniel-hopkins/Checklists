@@ -51,7 +51,6 @@
 - (IBAction)cancel
 {
 	[self.delegate listDetailViewControllerDidCancel:self];
-	NSLog(@"test");
 }
 
 - (IBAction)done

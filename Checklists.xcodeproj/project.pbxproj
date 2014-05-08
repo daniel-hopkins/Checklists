@@ -130,25 +130,25 @@
 		6C5C1011190C3E3500507E56 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
-				6C5C101A190C3E3500507E56 /* ChecklistsAppDelegate.h */,
-				6C5C101B190C3E3500507E56 /* ChecklistsAppDelegate.m */,
-				6C5C101D190C3E3500507E56 /* Main.storyboard */,
+				6C80B9FF1910772400F8DEAA /* AllListsViewController.h */,
+				6C80BA001910772400F8DEAA /* AllListsViewController.m */,
+				6CCC6AA81911BB19006295FE /* Checklist.h */,
+				6CCC6AA91911BB19006295FE /* Checklist.m */,
 				6C5C1040190D6AF600507E56 /* ChecklistItem.h */,
 				6C5C1041190D6AF600507E56 /* ChecklistItem.m */,
+				6C5C101A190C3E3500507E56 /* ChecklistsAppDelegate.h */,
+				6C5C101B190C3E3500507E56 /* ChecklistsAppDelegate.m */,
 				6C5C1020190C3E3500507E56 /* ChecklistViewController.h */,
 				6C5C1021190C3E3500507E56 /* ChecklistViewController.m */,
+				6CA309EA1919BC260043C59C /* DataModel.h */,
+				6CA309EB1919BC260043C59C /* DataModel.m */,
 				6C5C1023190C3E3500507E56 /* Images.xcassets */,
-				6C5C1012190C3E3500507E56 /* Supporting Files */,
 				035236E2190DC0B00027520D /* ItemDetailViewController.h */,
 				035236E3190DC0B00027520D /* ItemDetailViewController.m */,
 				6CCC6AAB19130AE5006295FE /* ListDetailViewController.h */,
 				6CCC6AAC19130AE5006295FE /* ListDetailViewController.m */,
-				6C80B9FF1910772400F8DEAA /* AllListsViewController.h */,
-				6C80BA001910772400F8DEAA /* AllListsViewController.m */,
-				6CA309EA1919BC260043C59C /* DataModel.h */,
-				6CA309EB1919BC260043C59C /* DataModel.m */,
-				6CCC6AA81911BB19006295FE /* Checklist.h */,
-				6CCC6AA91911BB19006295FE /* Checklist.m */,
+				6C5C101D190C3E3500507E56 /* Main.storyboard */,
+				6C5C1012190C3E3500507E56 /* Supporting Files */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";

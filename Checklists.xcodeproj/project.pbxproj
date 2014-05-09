@@ -25,6 +25,7 @@
 		6C5C1042190D6AF600507E56 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1041190D6AF600507E56 /* ChecklistItem.m */; };
 		6C80BA011910772400F8DEAA /* AllListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C80BA001910772400F8DEAA /* AllListsViewController.m */; };
 		6CA309EC1919BC260043C59C /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA309EB1919BC260043C59C /* DataModel.m */; };
+		6CA309EF191C2DD10043C59C /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA309EE191C2DD10043C59C /* IconPickerViewController.m */; };
 		6CCC6AAA1911BB19006295FE /* Checklist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC6AA91911BB19006295FE /* Checklist.m */; };
 		6CCC6AAD19130AE5006295FE /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC6AAC19130AE5006295FE /* ListDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,8 @@
 		6C80BA001910772400F8DEAA /* AllListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllListsViewController.m; sourceTree = "<group>"; };
 		6CA309EA1919BC260043C59C /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		6CA309EB1919BC260043C59C /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		6CA309ED191C2DD10043C59C /* IconPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconPickerViewController.h; sourceTree = "<group>"; };
+		6CA309EE191C2DD10043C59C /* IconPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconPickerViewController.m; sourceTree = "<group>"; };
 		6CCC6AA81911BB19006295FE /* Checklist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checklist.h; sourceTree = "<group>"; };
 		6CCC6AA91911BB19006295FE /* Checklist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Checklist.m; sourceTree = "<group>"; };
 		6CCC6AAB19130AE5006295FE /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				6C5C1021190C3E3500507E56 /* ChecklistViewController.m */,
 				6CA309EA1919BC260043C59C /* DataModel.h */,
 				6CA309EB1919BC260043C59C /* DataModel.m */,
+				6CA309ED191C2DD10043C59C /* IconPickerViewController.h */,
+				6CA309EE191C2DD10043C59C /* IconPickerViewController.m */,
 				6C5C1023190C3E3500507E56 /* Images.xcassets */,
 				035236E2190DC0B00027520D /* ItemDetailViewController.h */,
 				035236E3190DC0B00027520D /* ItemDetailViewController.m */,
@@ -281,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C5C1018190C3E3500507E56 /* main.m in Sources */,
+				6CA309EF191C2DD10043C59C /* IconPickerViewController.m in Sources */,
 				6C5C101C190C3E3500507E56 /* ChecklistsAppDelegate.m in Sources */,
 				6CA309EC1919BC260043C59C /* DataModel.m in Sources */,
 				6C80BA011910772400F8DEAA /* AllListsViewController.m in Sources */,

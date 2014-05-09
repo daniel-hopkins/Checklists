@@ -41,6 +41,7 @@
 	
 	
 	UILabel *label = (UILabel *)[cell viewWithTag:1001];
+	label.textColor = self.view.tintColor;
 	
 	if (item.checked) {
 		label.text = @"√";
